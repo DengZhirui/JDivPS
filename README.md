@@ -2,7 +2,7 @@
 JDivPS: A Diversified Product Search Dataset
 # Dataset Download
 As the files are too large, we provide the following approaches to get the data:
-- For international users, you can use [Google Drive](https://drive.google.com/file/d/197xROnc7lpGiJy0Y7UkQCzhesD6ZKCy-/view?usp=sharing) or [JD JoyBox-HK](https://3.cn/fCUv-kM) to download the file. Notice that JoyBox-HK requires an E-mail address to log in.
+- For international users, you can use [Google Drive](https://drive.google.com/file/d/197xROnc7lpGiJy0Y7UkQCzhesD6ZKCy-/view?usp=drive_link) or [JD JoyBox-HK](https://3.cn/fCUv-kM) to download the file. Notice that JoyBox-HK requires an E-mail address to log in.
 
 - For Chinese users, you can use [JD Joybox](http://box.jd.com/sharedInfo/E4B795CDC285F016A2FADAC4C83BA8D2) to get the file. The access password is 39gczm. You need an account on [JD.com](https://www.jd.com/) to access the data.
 
@@ -19,6 +19,7 @@ data_release
   ├── product_uvctr_dict_release.pkl.gz
   ├── query_intent_label_tr.csv
   ├── query_intent_label_ts.csv
+  ├── query_suggestions_release.pkl.gz
   └── query_product_features_release.pkl.gz
 ```
 The `pkl.gz` files are compressed binary files that can be opened in Python with the `pickle` and `gzip` packages. More details can be found in `data_release/check_data.py`. All those text contents are tokenized into integer ids with a private tokenizer. The content descriptions of the files are listed as follows:
@@ -34,6 +35,12 @@ The `pkl.gz` files are compressed binary files that can be opened in Python with
   | brand | the product brand's anonymized term ids |
   | size | the product size's anonymized term ids |
   | model | the product model's anonymized term ids |
+  | color | the product color's anonymized term ids |
+It should be addressed that the `size`, `model` and `color` of the product may be empty.
+- `query_suggestions_release.pkl.gz`: the query suggestions corresponding to the query. It is a Python dictionary with the following structure:
+  ```
+  {query:[suggestions1, suggestions2, ...]}
+  ```
 - `product_uvctr_dict_release.pkl.gz`: the popularity features of the products. It is a Python dictionary with the following structure:
   ```
   {product_id:[uv,pv,ctr]}
