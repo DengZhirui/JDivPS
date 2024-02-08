@@ -48,7 +48,7 @@ The `pkl.gz` files are compressed binary files that can be opened in Python with
   ```
   | Attribute | Description |
   |-------|-------|
-  | query | query's anonymized term ids |
+  | query | the query's anonymized term ids |
   | product_id | the product’s anonymized id |
   | relevance_score | relevance of the product to the query |
   | tf_idf_title | tf-idf score of the product's title |
