@@ -70,6 +70,13 @@ All those csv files are separated by `\t` in the following format:
 ```
 query\t intent\t product_id\t label
 ```
+  | Attribute | Description |
+  |-------|-------|
+  | query | the query's anonymized term ids |
+  | intent| the anonymized term ids of a user intent |
+  | product_id | anonymized product_id of a product in the initial product list |
+  | relation (0/1) | relevance of a product to the intent |
+
 Notice that we only provide the positive annotations to reduce the size of the file. Here `query` and `intent` are the tokenized integers concatenated with `,` as a separator.
 
 # Evaluation
