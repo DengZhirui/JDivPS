@@ -70,7 +70,7 @@ The first model denoted as `scratch_bert` is a model pretrained on over 10M prod
 It can be loaded and used with the `BertModel.from_pretrained` method of Huggingface Transformers.
 
 The second model denoted as `rel_bert` is a fine-tuned model based on `scratch_bert`. We use the relevance model in the platform as a teacher model to distill `rel_bert` for computing the relevance between a query and a product title.
-- Download path: [Google Drive](), [JD JoyBox-HK](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Download path: [Google Drive](https://drive.google.com/file/d/1Yjw1wmsJ6Wul1YQbBd5aIpWyLihze55A/view?usp=sharing), [JD JoyBox-HK](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 We will later release more pretrained and fine-tuned model checkpoints to support the research based on JDivPS dataset.
 
