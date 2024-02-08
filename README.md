@@ -4,7 +4,7 @@ JDivPS: A Diversified Product Search Dataset
 As the files are too large, we provide the following approaches to get the data:
 - For international users, you can use [Google Drive](https://drive.google.com/file/d/197xROnc7lpGiJy0Y7UkQCzhesD6ZKCy-/view?usp=sharing) or [JD JoyBox-HK](https://3.cn/fCUv-kM) to download the file. Notice that JoyBox-HK requires an E-mail address to log in.
 
-- For Chinese users, you can use [JD Joybox](http://box.jd.com/sharedInfo/E4B795CDC285F016A2FADAC4C83BA8D2) to get the file. The access password is: 39gczm
+- For Chinese users, you can use [JD Joybox](http://box.jd.com/sharedInfo/E4B795CDC285F016A2FADAC4C83BA8D2) to get the file. The access password is 39gczm. You need an account on [JD.com](https://www.jd.com/) to access the data.
 
 If you are facing difficulties accessing the data, feel free to contact us at the following E-mail address:
 - `zrdeng@ruc.edu.cn`
