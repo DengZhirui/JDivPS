@@ -26,6 +26,14 @@ The `pkl.gz` files are compressed binary files that can be opened in Python with
   ```
   {product_id:[title,category,brand,size,model]}
   ```
+  | Attribute | Description |
+  |-------|-------|
+  | product_id | the product’s anonymized id |
+  | title | the product's anonymized term ids |
+  | category | the product category's anonymized term ids |
+  | brand | the product brand's anonymized term ids |
+  | size | the product size's anonymized term ids |
+  | model | the product model's anonymized term ids |
 - `product_uvctr_dict_release.pkl.gz`: the popularity features of the products. It is a Python dictionary with the following structure:
   ```
   {product_id:[uv,pv,ctr]}
