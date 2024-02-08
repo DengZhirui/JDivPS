@@ -46,6 +46,19 @@ The `pkl.gz` files are compressed binary files that can be opened in Python with
   ```
   {(query,product_id):[relevance_score,tf_idf_title,tf_idf_category,tf_idf_brand, bm25_title,bm25_category,bm25_brand,uv,pv,ctr]}
   ```
+  | Attribute | Description |
+  |-------|-------|
+  | query | query's anonymized term ids |
+  | product_id | the product’s anonymized id |
+  | relevance_score | relevance of the product to the query |
+  | tf_idf_title | tf-idf score of the product's title |
+  | tf_idf_category | tf-idf score of the product's category |
+  | tf_idf_brand | tf-idf score of the product's brand |
+  | bm25_title | BM25 score of the product's title |
+  | bm25_category | BM25 score of the product's category |
+  | bm25_brand | BM25 score of the product's brand |
+  | uv,pv,ctr | UV, PV, and CTR score of the product |
+  
   Notice that the UV, PV, and CTR are identical to the features in `product_uvctr_dict_release.pkl.gz`.
 
 The initial ranking lists with relevance scores can be generated with the `data_release/generate_initial_ranking_list.py` file.
