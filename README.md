@@ -53,7 +53,20 @@ The diversity measures can be evaluated with the official TREC `ndeval` tool. Mo
 # The Pretrained BERT model
 We provide two 12-layer BERT models with the same word tables as our private tokenizer. 
 
-The first one is a model pretrained on over 10M product titles:
+## Pretrained Model
+The special token ID map of our private tokenizer is listed as follows:
+```
+[UNK] 1
+[SEP] 3
+[PAD] 0
+[CLS] 2
+[MASK] 4
+```
+We provide two BERt models to help researchers deal with the anonymized dataset.
+
+The first model denoted as `scratch_bert` is a model pretrained on over 10M product titles:
 - Download path:
 
-The
+It can be loaded and used with the `BertModel.from_pretrained` method of Huggingface Transformers.
+
+The second model denoted as `rel_bert` is a fine-tuned model based on `scratch_bert`. We use the relevance model in the platform as a teacher model to distill `rel_bert` for computing the relevance between a query and a product title.
