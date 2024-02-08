@@ -2,7 +2,7 @@
 JDivPS: A Diversified Product Search Dataset
 # Dataset Download
 As the files are too large, we provide the following approaches to get the data:
-- For international users, you can use [Google Drive](https://drive.google.com/file/d/197xROnc7lpGiJy0Y7UkQCzhesD6ZKCy-/view?usp=sharing) or [JoyBox-HK](https://3.cn/fCUv-kM) to download the file. Notice that JoyBox-HK requires an E-mail address to log in.
+- For international users, you can use [Google Drive](https://drive.google.com/file/d/197xROnc7lpGiJy0Y7UkQCzhesD6ZKCy-/view?usp=sharing) or [JD JoyBox-HK](https://3.cn/fCUv-kM) to download the file. Notice that JoyBox-HK requires an E-mail address to log in.
 
 - For Chinese users, you can use [JD Joybox](http://box.jd.com/sharedInfo/E4B795CDC285F016A2FADAC4C83BA8D2) to get the file. The access password is: 39gczm
 
@@ -65,8 +65,16 @@ The special token ID map of our private tokenizer is listed as follows:
 We provide two BERt models to help researchers deal with the anonymized dataset.
 
 The first model denoted as `scratch_bert` is a model pretrained on over 10M product titles:
-- Download path:
+- Download path: [Google Drive](https://drive.google.com/file/d/1Nuz5vbrFyPS7Cqu4r-4PyO4T7iYUuuHs/view?usp=sharing), [JD JoyBox-HK](https://3.cn/fDb-mx6)
 
 It can be loaded and used with the `BertModel.from_pretrained` method of Huggingface Transformers.
 
 The second model denoted as `rel_bert` is a fine-tuned model based on `scratch_bert`. We use the relevance model in the platform as a teacher model to distill `rel_bert` for computing the relevance between a query and a product title.
+- Download path: [Google Drive](), [JD JoyBox-HK](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+We will later release more pretrained and fine-tuned model checkpoints to support the research based on JDivPS dataset.
+
+# License
+This repository is licensed under Apache-2.0 License.
+
+The JDivPS dataset is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
