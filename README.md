@@ -38,6 +38,10 @@ The `pkl.gz` files are compressed binary files that can be opened in Python with
   ```
   {product_id:[uv,pv,ctr]}
   ```
+  | Attribute | Description |
+  |-------|-------|
+  | product_id | the product’s anonymized id |
+  | uv, pv, ctr | UV, PV, and CTR score of the product |
 - `query_product_features_release.pkl.gz`: all the features of every existing query-product pair. Details about the features can be found in our paper. It is a Python dictionary with the following structure:
   ```
   {(query,product_id):[relevance_score,tf_idf_title,tf_idf_category,tf_idf_brand, bm25_title,bm25_category,bm25_brand,uv,pv,ctr]}
