@@ -25,18 +25,18 @@ data_release
 The `pkl.gz` files are compressed binary files that can be opened in Python with the `pickle` and `gzip` packages. More details can be found in `data_release/check_data.py`. All those text contents are tokenized into integer ids with a private tokenizer. The content descriptions of the files are listed as follows:
 - `dict_product_text_release.pkl.gz`: the text metadata of the products. It is a Python dictionary with the following structure:
   ```
-  {product_id:[product_name,category,brand,size,model]}
+  {product_id:[product_name,category_name,brand_name,size,attribute,color]}
   ```
   | Attribute | Description |
   |-------|-------|
   | product_id | the product’s anonymized id |
   | product_name | the product's anonymized term ids |
-  | category | the product category's anonymized term ids |
-  | brand | the product brand's anonymized term ids |
+  | category_name | the product category's anonymized term ids |
+  | brand_name | the product brand's anonymized term ids |
   | size | the product size's anonymized term ids |
-  | model | the product model's anonymized term ids |
+  | attribute | the product attribute's anonymized term ids |
   | color | the product color's anonymized term ids |
-It should be addressed that the `size`, `model` and `color` of the product may be empty.
+It should be addressed that the `size`, `attribute` and `color` of the product may be empty.
 - `query_suggestions_release.pkl.gz`: the query suggestions corresponding to the query. It is a Python dictionary with the following structure:
   ```
   {query:[suggestions1, suggestions2, ...]}
